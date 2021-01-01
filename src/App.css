@@ -1,0 +1,151 @@
+/*header {
+  text-decoration: none;
+  color :whitesmoke;
+  padding: 0.15px;
+
+  background-color: rgb(52, 55, 56);
+  opacity: 1;
+  border-style: solid;
+
+
+}
+h1{
+  background-color: lightgray;
+  background-position: center;
+  background-size: cover;
+  background-origin: inherit;
+}
+main{
+  background-color: lightsteelblue;
+background-origin: padding-box;
+  background-position: top;
+}
+textPath{
+width: 100%;
+display: flexbox;
+justify-content: space-between;
+flex-wrap: wrap;
+}
+body {
+  background-color: darkslategray;
+  background-position: center top;
+  background-position: 50% 50%; 
+
+
+}
+footer{
+  background-color:lightyellow;
+  background-position: bottom;
+  background-size: unset;
+
+
+}
+.app{
+  max-width: 1200px;
+  width: 100%;
+  margin:0 auto;
+  }
+  section{
+    box-shadow: 0 0 5px #ccc;
+    padding: 15px 10px;
+  }*/
+.App-header{
+  
+    min-height: 70px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    overflow: hidden;
+
+}
+header.log a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: black;
+
+}
+header nav{
+    display: flex;
+}
+nav ul li{
+    list-style: none;
+    display: inline-block;
+}
+nav ul li a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #555;
+    padding:  0 15px; 
+    }
+nav ul  li a:hover{
+        color: lightseagreen;
+        position: relative;
+    }
+nav .nav-cart span{
+        position: absolute;
+        top :-12px;
+        right: -7px;
+        background-color: crimson;
+        font-size: 10px;
+        color: whitesmoke;
+        padding: 3px 5px;
+        border-radius: 50%;
+        z-index: -1;
+    }
+    @media (max-width:650px){
+        header ul{
+            position: fixed;
+            top:-100%;
+            left:0;
+            widows: 100%;
+            height: 100vh;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-direction: column;
+            background: wheat;
+            z-index: 99;
+            opacity: 0.56;
+            transition: 0.5s linear;
+  }     
+        }
+        header ul.toggle{
+            top: 0;
+        }
+  
+  .App {
+    text-align: center;
+  }
+  
+  .App-logo {
+    height: 40vmin;
+    pointer-events: none;
+  }
+  
+  @media (prefers-reduced-motion: no-preference) {
+    .App-logo {
+      animation: App-logo-spin infinite 20s linear;
+    }
+  }
+  
+  .App-header {
+    background-color: #282c34;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
+    min-height: 70px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    overflow: hidden;
+    padding-top: 50px;
+    justify-content: space-between;
+  }
+  
+  .App-link {
+    color: #61dafb;
+  }
