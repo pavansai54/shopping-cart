@@ -1,5 +1,5 @@
 import React from "react";
-import {state} from 'react';
+
 function Cart({cart, removeCart})
 {
 	
@@ -10,7 +10,6 @@ function Cart({cart, removeCart})
   <div className="container">
       <h1 className="phead"> MY CART</h1>
       <hr />
-
 
       <div className="row">
   
@@ -43,6 +42,7 @@ function Cart({cart, removeCart})
           </div>
         </div>
       </figure>
+     
     </div>
 
           )

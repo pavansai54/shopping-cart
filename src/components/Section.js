@@ -1,6 +1,6 @@
 import React from "react";
 import { useState } from 'react';
-
+import Header from  './Header';
 function Product({addToCart})
 {
 	const [products] = useState([
