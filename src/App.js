@@ -5,7 +5,7 @@ import Menu from './components/bar.svg';
 import cartIcon from './components/cart.svg';
 import './App.css';
 import { useState } from 'react';
-
+import 'bootstrap/dist/js/bootstrap.min.js';
 
 
 function App() 
@@ -78,7 +78,34 @@ function App()
     </div>
     </div>
  </header>
- 
+
+ <div id="demo" class="carousel slide" data-ride="carousel">
+
+  <ul class="carousel-indicators">
+    <li data-target="#demo" data-slide-to="0" class="active"></li>
+    <li data-target="#demo" data-slide-to="1"></li>
+    <li data-target="#demo" data-slide-to="2"></li>
+  </ul>
+
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="https://rukminim1.flixcart.com/flap/844/140/image/5130c3e4895b5d5a.jpg?q=50" alt="Iphone XS"  width="1100" height="500"/>
+    </div>
+    <div class="carousel-item">
+      <img src="https://rukminim1.flixcart.com/flap/844/140/image/b12af655d052f0fe.jpg?q=50" alt="Apple"  width="1100" height="500"/>
+    </div>
+    <div class="carousel-item">
+      <img src="https://rukminim1.flixcart.com/flap/50/50/image/f43e4113ba12d1ac.jpg?q=50" alt="OnePlus"  width="1100" height="500"/>
+    </div>
+  </div>
+<a class="carousel-control-prev" href="#demo" data-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </a>
+  <a class="carousel-control-next" href="#demo" data-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </a>
+
+</div>
 
 <div>
       {page===PAGE_PRODUCTS && <Products addToCart={addToCart}/>}
